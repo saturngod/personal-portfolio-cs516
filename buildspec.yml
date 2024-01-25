@@ -1,0 +1,15 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
+      - npm install
+  build:
+    commands:
+      - echo "Building the project..."
+      - npm run build
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'out'
