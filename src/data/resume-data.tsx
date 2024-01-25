@@ -89,15 +89,15 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "Mifi Source",
-      link: "https://mifisource.com/",
+      company: "Credit Advisor",
+      link: "https://advisor.credit/",
       badges: ["Remote"],
       title: "iOS Developer",
       location: "United State",
       start: "Jan 2024",
       end: "Current",
       description:
-        "Client Name: Credit Advisor. Working and maintain the iOS app for Credit Advisor. Using UIKit for old ViewController. Using the SwiftUI for new ViewController.",
+        "Working and maintain the iOS app for Credit Advisor. Using SwiftUI for developing the credito advisor app.",
     },
     {
       company: "COMQUAS",
