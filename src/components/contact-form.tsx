@@ -30,7 +30,7 @@ const ContactForm = () => {
   
     try {
       const response = await axios.post(
-        'https://dn9efodfug.execute-api.us-east-1.amazonaws.com/v1/send',
+        'https://sendmail.htainlinshwe.xyz/v1/send',
         formData,
         { headers: { 'Content-Type': 'application/json' } }
       );
