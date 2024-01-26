@@ -11,9 +11,10 @@ const ContactForm = () => {
   const [message, setMessage] = useState('');
 
   const [sum, setSum] = useState('');
-  const [num1] = useState(Math.floor(Math.random() * 10));
-  const [num2] = useState(Math.floor(Math.random() * 10));
-  
+  const [num1,setNum1] = useState(Math.floor(Math.random() * 10));
+  const [num2,setNum2] = useState(Math.floor(Math.random() * 10));
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = async (event: { preventDefault: () => void; }) => {
     event.preventDefault();
 
@@ -33,18 +34,28 @@ const ContactForm = () => {
       hash
     };
   
+    setIsSubmitting(true);
     try {
       const response = await axios.post(
         'https://sendmail.htainlinshwe.xyz/send',
         formData,
         { headers: { 'Content-Type': 'application/json' } }
       );
-      console.log(response.data);
-      if(response.data.statusCode == 200) {
-        alert("Email has been sent successfully");
-      }
+      
+      
     } catch (error) {
       console.error(error);
+    }
+    finally {
+      alert("Email has been sent successfully");
+
+      setName("");
+      setSubject("");
+      setMessage("");
+      setSum("");
+      setNum1(Math.floor(Math.random() * 10));
+      setNum2(Math.floor(Math.random() * 10));
+      setIsSubmitting(false);
     }
 
   };
@@ -64,6 +75,14 @@ const ContactForm = () => {
           </label>
           <input value={subject}  onChange={e => setSubject(e.target.value)}  className="appearance-none block w-full bg-gray-100 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-subject" type="text" placeholder="Subject" />
         </div>
+
+        <div className="w-full px-3 pt-3">
+          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-subject">
+          What is {num1} + {num2} ?
+          </label>
+          <input value={sum}  onChange={e => setSum(e.target.value)}  className="appearance-none block w-full bg-gray-100 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-subject" type="text" placeholder="Answer" />
+        </div>
+
       </div>
       <div className="flex flex-wrap -mx-3 mb-6">
         <div className="w-full px-3">
@@ -74,18 +93,10 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap -mx-3 mb-6">
-        <div className="w-full px-3">
-          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-sum">
-            What is {num1} + {num2}?
-          </label>
-          <input value={sum} onChange={e => setSum(e.target.value)} className="appearance-none block w-full bg-gray-100 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-sum" type="text" placeholder="Your Answer" />
-        </div>
-      </div>
       
       <div className="md:flex md:items-center">
         <div className="md:w-1/3">
-          <button className="shadow bg-black hover:bg-zinc-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
+          <button disabled={isSubmitting} className="shadow bg-black hover:bg-zinc-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
             Send
           </button>
         </div>
