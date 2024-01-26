@@ -97,7 +97,7 @@ export const RESUME_DATA = {
       start: "Jan 2024",
       end: "Current",
       description:
-        "Working and maintain the iOS app for Credit Advisor. Using SwiftUI for developing the credito advisor app.",
+        "Working and maintain the iOS app for Credit Advisor.",
     },
     {
       company: "COMQUAS",
