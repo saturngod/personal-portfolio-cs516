@@ -30,7 +30,7 @@ const ContactForm = () => {
   
     try {
       const response = await axios.post(
-        'https://sendmail.htainlinshwe.xyz/v1/send',
+        'https://sendmail.htainlinshwe.xyz/send',
         formData,
         { headers: { 'Content-Type': 'application/json' } }
       );
