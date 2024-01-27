@@ -35,7 +35,7 @@ export const RESUME_DATA = {
       },
       {
         name: "Youtube",
-        url: "https://x.com/saturngod",
+        url: "https://www.youtube.com/@saturngod",
         icon: YoutubeIcon,
       },
     ],

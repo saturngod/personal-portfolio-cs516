@@ -9,7 +9,6 @@ import { Button } from "../components/ui/button";
 import { RESUME_DATA } from "../data/resume-data";
 import { ProjectCard } from "../components/project-card";
 import ContactForm from "@/components/contact-form";
-import Link from "next/link";
 
 
 export const metadata: Metadata = {
