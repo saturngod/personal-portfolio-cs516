@@ -225,9 +225,9 @@ export default function Page() {
                 <CardContent className="mt-2">
                   
                 <ul className="pt-2 list-disc ml-4">
-              <li><Link href="/blog/site-infra">Infrasture of Current Static Site</Link></li>
-              <li><Link href="/blog/site-aws">Why I am learning AWS?</Link></li>
-              <li><Link href="/blog/site-swiftui">Why should use SwiftUI in 2024</Link></li>
+              <li><a href="/blog/site-infra.html">Infrasture of Current Static Site</a></li>
+              <li><a href="/blog/why-aws.html">Why I am learning AWS?</a></li>
+              <li><a href="/blog/why-swiftui.html">Why should use SwiftUI in 2024</a></li>
               </ul>
 
 
