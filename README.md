@@ -10,7 +10,7 @@
 - Prepare the CI/CD for CV
 - Design the system
 
-![](./systemdesign.png)
+![](./public/systemdesign.png)
 
 ## Jan 19 2024
 
