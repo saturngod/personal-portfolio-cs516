@@ -8,7 +8,6 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { RESUME_DATA } from "../data/resume-data";
 import { ProjectCard } from "../components/project-card";
-import ContactForm from "@/components/contact-form";
 
 
 export const metadata: Metadata = {
@@ -211,46 +210,9 @@ export default function Page() {
           </div>
         </Section>
 
-        <Section className="print-force-new-page scroll-mb-16">
+       
 
-        <Card key="contact">
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                  <h2 className="text-xl font-bold">
-                        Blog
-                      </h2>
-                  </div>
-                </CardHeader>
-                <CardContent className="mt-2">
-                  
-                <ul className="pt-2 list-disc ml-4">
-              <li><a href="/blog/site-infra.html">Infrasture of Current Static Site</a></li>
-              <li><a href="/blog/why-aws.html">Why I am learning AWS?</a></li>
-              <li><a href="/blog/why-swiftui.html">Why should use SwiftUI in 2024</a></li>
-              </ul>
-
-
-                </CardContent>
-              </Card>
-
-        
-        </Section>
-
-        <Section className="print-force-new-page scroll-mb-16">
-
-          <Card key="contact">
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                  <h2 className="text-xl font-bold">
-                        Contact
-                      </h2>
-                  </div>
-                </CardHeader>
-                <CardContent className="mt-2">
-                  <ContactForm></ContactForm>
-                </CardContent>
-              </Card>
-        </Section>
+       
       </section>
 
       <CommandMenu
