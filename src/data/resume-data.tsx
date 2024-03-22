@@ -72,15 +72,15 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "Credit Advisor",
-      link: "https://advisor.credit/",
+      company: "Mifi LLC",
+      link: "https://wizepay.ai/",
       badges: ["Remote"],
       title: "iOS Developer",
       location: "United State",
       start: "Jan 2024",
-      end: "Current",
+      end: "Mar 2024",
       description:
-        "Working and maintain the iOS app for Credit Advisor.",
+        "Devloped [Wize Pay app](https://apps.apple.com/us/app/wizepay/id6470516783) with SwiftUI., Using Plaid SDK for bank account linking. Github Action for the CI/CD. Follow the Test-Driven Development (TDD) and MVVM architecture.",
     },
     {
       company: "COMQUAS",
@@ -149,6 +149,20 @@ export const RESUME_DATA = {
     "Laravel",
   ],
   projects: [
+    {
+      title: "Wize Pay",
+      techStack: [
+        "Swift",
+        "SwiftUI",
+        "Plaid SDK",
+        "RESTFul",
+      ],
+      description: "Finiancial app for the US market. User can link their bank account and see the transaction.",
+      link: {
+        label: "App Store",
+        href: "https://apps.apple.com/us/app/wizepay/id6470516783",
+      },
+    },
     {
       title: "Mahar",
       techStack: [
