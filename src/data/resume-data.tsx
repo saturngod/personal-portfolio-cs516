@@ -79,14 +79,14 @@ export const RESUME_DATA = {
   work: [
     {
       company: "Mifi LLC",
-      link: "https://wizepay.ai/",
+      link: "https://apps.apple.com/us/app/wizepay/id6470516783",
       badges: ["Remote"],
       title: "iOS Developer",
       location: "United State",
       start: "Jan 2024",
       end: "Mar 2024",
       description:
-        "Devloped [Wize Pay app](https://apps.apple.com/us/app/wizepay/id6470516783) with SwiftUI., Using Plaid SDK for bank account linking. Github Action for the CI/CD. Follow the Test-Driven Development (TDD) and MVVM architecture.",
+        "Developed Wize Pay app with SwiftUI. Using Plaid SDK for bank account linking. Github Action for the CI/CD. Follow the Test-Driven Development (TDD) and MVVM architecture.",
     },
     {
       company: "COMQUAS",
