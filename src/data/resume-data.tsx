@@ -1,4 +1,5 @@
 import { GitHubIcon } from "../components/icons/GitHubIcon";
+import { BlogIcon } from "../components/icons/BlogIcon";
 import { LinkedInIcon } from "../components/icons/LinkedInIcon";
 import { XIcon } from "../components/icons/XIcon";
 import { YoutubeIcon } from "../components/icons/YoutubeIcon";
@@ -18,6 +19,11 @@ export const RESUME_DATA = {
     email: "",
     tel: "",
     social: [
+      {
+        name: "Blog",
+        url: "https://www.saturngod.net",
+        icon: BlogIcon,
+      },
       {
         name: "GitHub",
         url: "https://github.com/saturngod",
