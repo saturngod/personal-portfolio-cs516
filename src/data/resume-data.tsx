@@ -82,7 +82,7 @@ export const RESUME_DATA = {
       title: "Software Engineer",
       location: "United State",
       start: "May 2024",
-      end : "",
+      end : "Current",
       description: "",
     },
     {
