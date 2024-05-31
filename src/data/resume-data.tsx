@@ -7,12 +7,10 @@ import { YoutubeIcon } from "../components/icons/YoutubeIcon";
 export const RESUME_DATA = {
   name: "Htain Lin Shwe",
   initials: "HLS",
-  location: "Bolingbrook,IL",
-  locationLink: "https://www.google.com/maps/place/Bolingbrook+IL",
-  about:
-    "iOS Developer ❤️ Swift UI & UIKit",
-  summary:
-    "iOS Developer with 9 years of experience, specializing in Swift and SwiftUI. Build applications using the MVVM architecture and also proficient with MVC. Can construct Auto Layout with Storyboard in UIKit and have a solid understanding of Test-Driven Development (TDD).",
+  location: "The Woodlands,TX",
+  locationLink: "https://www.google.com/maps/place/The+Woodlands+TX",
+  about: "Software Engineer",
+  summary: "iOS Developer with 9 years of experience, specializing in Swift and SwiftUI. Build applications using the MVVM architecture and also proficient with MVC. Can construct Auto Layout with Storyboard in UIKit and have a solid understanding of Test-Driven Development (TDD).",
   avatarUrl: "https://avatars.githubusercontent.com/u/135177?v=4",
   personalWebsiteUrl: "https://blog.saturngod.net",
   contact: {
