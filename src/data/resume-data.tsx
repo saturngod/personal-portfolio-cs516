@@ -78,6 +78,16 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Bonjoy",
+      link: "https://www.bonjoy.com",
+      badges: [],
+      title: "Software Engineer",
+      location: "United State",
+      start: "May 2024",
+      end : "",
+      description: "",
+    },
+    {
       company: "Mifi LLC",
       link: "https://apps.apple.com/us/app/wizepay/id6470516783",
       badges: ["Remote"],
